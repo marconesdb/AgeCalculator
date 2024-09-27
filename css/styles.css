@@ -1,0 +1,63 @@
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+body {
+  background-color: var(--off-white);
+}
+
+/* Remove spinner for webkit browsers */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove spinner for Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* General reset for number inputs */
+input[type=number] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+button[type="submit"] {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button[type="submit"] svg {
+  width: 24px;
+  height: 24px;
+}
+
+.text-purple{
+  color: var(--purple);
+}
+
+
+.text-smokey-grey{
+  color: var(--smokey-grey);
+}
+
+@media (min-width: 768px) {
+  button[type="submit"] {
+      right: 0;
+      left: auto;
+      transform: translateY(-50%);
+  }
+}

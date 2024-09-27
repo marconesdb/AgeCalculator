@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-off-white font-poppins flex justify-center items-center min-h-screen">
+    <div class="bg-white p-6 rounded-3xl rounded-br-[100px] shadow-md w-full max-w-md md:max-w-xl">
+        <form id="ageForm" class="mb-8">
+            <div class="flex gap-4">
+                <div class="flex-1">
+                    <label for="day" class="block text-smokey-grey text-sm font-bold mb-1">DAY</label>
+                    <input type="number" id="day" placeholder="DD" class="w-full p-3 text-2xl font-bold border rounded-lg">
+                    <p class="error-message text-light-red text-xs italic mt-1 hidden"></p>
+                </div>
+                <div class="flex-1">
+                    <label for="month" class="block text-smokey-grey text-sm font-bold mb-1">MONTH</label>
+                    <input type="number" id="month" placeholder="MM" class="w-full p-3 text-2xl font-bold border rounded-lg">
+                    <p class="error-message text-light-red text-xs italic mt-1 hidden"></p>
+                </div>
+                <div class="flex-1">
+                    <label for="year" class="block text-smokey-grey text-sm font-bold mb-1">YEAR</label>
+                    <input type="number" id="year" placeholder="YYYY" class="w-full p-3 text-2xl font-bold border rounded-lg">
+                    <p class="error-message text-light-red text-xs italic mt-1 hidden"></p>
+                </div>
+            </div>
+            <div class="relative flex items-center my-8">
+              <div class="flex-grow border-t border-light-grey"></div>
+              <button type="submit" class="absolute left-1/2 md:left-auto md:right-0 transform -translate-x-1/2 md:translate-x-0 -translate-y-1/2 bg-purple hover:bg-off-black transition-colors duration-300 rounded-full p-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+                      <g fill="none" stroke="#FFF" stroke-width="2">
+                          <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/>
+                      </g>
+                  </svg>
+              </button>
+          </div>
+        </form>
+        <div class="text-5xl md:text-6xl font-extrabold italic">
+            <p><span id="years" class="text-purple">--</span> years</p>
+            <p><span id="months" class="text-purple">--</span> months</p>
+            <p><span id="days" class="text-purple">--</span> days</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
