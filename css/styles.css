@@ -81,3 +81,48 @@ button[type="submit"] svg {
       transform: translateY(-50%);
   }
 }
+
+
+
+
+/* Media query para telas a partir de 375px */
+@media (max-width: 375px)  {
+  /* Ajustando o botão para ficar centralizado na linha */
+  .relative.my-8 {
+    position: relative;
+    height: 64px; /* Altura ajustada para a linha */
+  }
+
+  .relative.my-8 button[type="submit"] {
+    position: absolute;
+    top: 50%; /* Posiciona o botão no meio da linha */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o botão no meio exato da linha */
+    margin-top: 0; /* Remove a margem superior */
+  }
+  
+  /* Ajuste da largura do container principal para telas de 375px */
+  .container {
+    
+    height: 75vh;
+  }
+
+  form{
+    padding-top: 30px;
+  }
+
+  /* Ajuste da largura dos inputs */
+  input[type="number"] {
+    width: 100%; /* Largura reduzida dos inputs */
+    display: flex;
+    justify-content: center; /* Centraliza os inputs */
+    align-items: center;
+    flex-direction: column; /* Inputs em coluna */
+  }
+
+  /* Redução do tamanho das fontes dos labels */
+  label {
+    font-size: 0.875rem; /* Tamanho menor para os labels */
+  }
+}
+
