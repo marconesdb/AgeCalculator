@@ -35,15 +35,29 @@ input[type=number] {
 button[type="submit"] {
   width: 64px;
   height: 64px;
+  background-color: var(--purple);
+  border: none;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 65px;
+}
+/* Mudança de cor quando o botão for clicado */
+button[type="submit"]:active {
+  background-color: black; /* Cor preta ao clicar */
 }
 
 button[type="submit"] svg {
-  width: 24px;
-  height: 24px;
+  width: auto;
+  height: auto;
 }
+
+button[type="submit"] svg {
+  width: 46px; /* Ajuste de acordo com o SVG embutido */
+  height: 44px;
+}
+
 
 .text-purple{
   color: var(--purple);
