@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
 :root {
   --purple: hsl(259, 100%, 65%);
   --light-red: hsl(0, 100%, 67%);
@@ -10,6 +12,10 @@
 
 body {
   background-color: var(--off-white);
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Remove spinner for webkit browsers */
